@@ -19,4 +19,8 @@ public class Enemy : MonoBehaviour
         // todo - destroy the bullet
         // todo - trigger death animation
     }
+    private void OnDestroy()
+    {
+        Enemy.OnEnemyDied -= OnEnemyDied;
+    }
 }

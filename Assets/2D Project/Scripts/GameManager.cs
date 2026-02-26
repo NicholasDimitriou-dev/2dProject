@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 
 public class GameManager : MonoBehaviour
@@ -6,6 +7,10 @@ public class GameManager : MonoBehaviour
     {
        // todo - sign up for notification about enemy death 
        Enemy.OnEnemyDied += OnEnemyDied;
+    }
+    private void OnDestroy()
+    {
+        Enemy.OnEnemyDied -= OnEnemyDied;
     }
 
     void OnEnemyDied(int points)
