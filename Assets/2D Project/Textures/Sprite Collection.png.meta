@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 15c1ca006b2f471429f3baa6ef131156
+guid: 3da4e80dae9a9d640b94b69c7fac7cd5
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -7677526327147106475
-    second: Irregular Sprite Sheet_0
+      213: 1192550883305499523
+    second: Sprite Collection_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -48,7 +48,7 @@ TextureImporter:
   compressionQuality: 50
   spriteMode: 2
   spriteExtrude: 1
-  spriteMeshType: 1
+  spriteMeshType: 0
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
   spritePixelsToUnits: 100
@@ -100,23 +100,47 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Irregular Sprite Sheet_0
+      name: Sprite Collection_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 208
-        height: 179
+        width: 617
+        height: 2035
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
-      outline: []
+      outline:
+      - - {x: -290.5, y: 844.5}
+        - {x: -171.5, y: 844.5}
+        - {x: -171.5, y: 911.5}
+        - {x: -290.5, y: 911.5}
+      - - {x: 5.5, y: 766.5}
+        - {x: 55.5, y: 766.5}
+        - {x: 55.5, y: 805.5}
+        - {x: 9.5, y: 805.5}
+      - - {x: 61.5, y: 771.5}
+        - {x: 110.5, y: 771.5}
+        - {x: 110.5, y: 814.5}
+        - {x: 61.5, y: 814.5}
+      - - {x: 119.5, y: 771.5}
+        - {x: 160.5, y: 771.5}
+        - {x: 160.5, y: 812.5}
+        - {x: 119.5, y: 812.5}
+      - - {x: 167.5, y: 770.5}
+        - {x: 217.5, y: 770.5}
+        - {x: 217.5, y: 808.5}
+        - {x: 167.5, y: 808.5}
+      - - {x: -305.5, y: 736.5}
+        - {x: -177.5, y: 736.5}
+        - {x: -177.5, y: 762.5}
+        - {x: -305.5, y: 762.5}
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 55fefa49b72f37590800000000000000
-      internalID: -7677526327147106475
+      spriteID: 38ba000c5bacc8010800000000000000
+      internalID: 1192550883305499523
       vertices: []
       indices: 
       edges: []
@@ -125,7 +149,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 12533d88e2b07464da035f1612b244ab
     internalID: 0
     vertices: []
     indices: 
@@ -133,9 +157,13 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     spriteCustomMetadata:
-      entries: []
+      entries:
+      - key: SpriteEditor.SliceOnImport
+        value: True
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":true,"gridCellCount":{"x":12.0,"y":45.0},"gridSpriteSize":{"x":50.0,"y":50.0},"gridSpriteOffset":{"x":0.0,"y":25.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":0,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
-      Irregular Sprite Sheet_0: -7677526327147106475
+      Sprite Collection_0: 1192550883305499523
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
