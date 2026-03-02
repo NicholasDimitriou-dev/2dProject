@@ -10,7 +10,7 @@ public class wall : MonoBehaviour
     private void OnCollisionEnter(Collision other)
     {
         Debug.Log("enter");
-        if (other.gameObject.CompareTag("Finish")) 
+        if (other.gameObject.CompareTag("enemy")) 
         {
             wallCollide?.Invoke();
         }

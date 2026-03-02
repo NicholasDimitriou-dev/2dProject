@@ -21,7 +21,7 @@ public class enemyMovement : MonoBehaviour
             direction = 0.25f;
             transform.position = new Vector3(transform.position.x+.5f,transform.position.y-0.25f, 0);
         }
-
+        
         if (transform.position.x >= 6.5f)
         {
             direction = -0.25f;

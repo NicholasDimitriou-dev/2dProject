@@ -14,7 +14,7 @@ public class health : MonoBehaviour
     private void OnCollisionEnter(Collision other)
     {
         Debug.Log("Enter");
-        if (other.gameObject.layer == LayerMask.NameToLayer("bullet"))
+        if (other.gameObject.layer == LayerMask.NameToLayer("b"))
         {
             Destroy(other.gameObject);
             life--;
