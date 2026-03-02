@@ -22,5 +22,14 @@ public class Player : MonoBehaviour
             // todo - destroy the bullet after 3 seconds
             // todo - trigger shoot animation
         }
+
+        if (Keyboard.current != null && Keyboard.current.aKey.isPressed)
+        {
+            transform.position += new Vector3(-5f * Time.deltaTime, 0, 0);
+        }
+        if (Keyboard.current != null && Keyboard.current.dKey.isPressed)
+        {
+            transform.position += new Vector3(5f * Time.deltaTime, 0, 0);
+        }
     }
 }
