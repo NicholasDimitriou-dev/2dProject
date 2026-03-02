@@ -8,6 +8,5 @@ public class Bullet : MonoBehaviour
     void Start()
     {
         GetComponent<Rigidbody2D>().linearVelocity = Vector2.up * speed;
-        Debug.Log("Wwweeeeee");
     }
 }

@@ -13,10 +13,12 @@ public class health : MonoBehaviour
     // Update is called once per frame
     private void OnCollisionEnter(Collision other)
     {
+        Debug.Log("Enter");
         if (other.gameObject.layer == LayerMask.NameToLayer("bullet"))
         {
             Destroy(other.gameObject);
             life--;
+            Debug.Log("life");
             if (life== 0)
             {
                 Destroy(gameObject);

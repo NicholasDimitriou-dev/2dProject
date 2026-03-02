@@ -9,6 +9,7 @@ public class wall : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     private void OnCollisionEnter(Collision other)
     {
+        Debug.Log("enter");
         if (other.gameObject.CompareTag("Finish")) 
         {
             wallCollide?.Invoke();

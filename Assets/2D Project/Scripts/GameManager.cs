@@ -122,9 +122,9 @@ public class GameManager : MonoBehaviour
 
     void OnEnemyDied(int points)
     {
-        Debug.Log(points);
+        // Debug.Log(points);
         score += points;
-        Debug.Log(score);
+        // Debug.Log(score);
        
         //scores.SetText();
     }

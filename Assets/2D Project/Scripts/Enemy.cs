@@ -16,7 +16,6 @@ public class Enemy : MonoBehaviour
     {
        
         if (collision.gameObject.layer == LayerMask.NameToLayer("bullet") && collision.gameObject.tag == "Player") {
-            Debug.Log("Ouch!");
             Destroy(collision.gameObject);
             OnEnemyDied?.Invoke(pointTotal);
             Destroy(this.gameObject); 
@@ -38,7 +37,6 @@ public class Enemy : MonoBehaviour
     private void Fire()
     {
         GameObject shot = Instantiate(bullet, transform.position + shootOffsetTransform.position, Quaternion.identity);
-        Debug.Log("Bang!");
         Destroy(shot, 3f);
     }
 }

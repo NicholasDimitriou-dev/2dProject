@@ -3,7 +3,6 @@ using UnityEngine;
 
 public class enemyMovement : MonoBehaviour
 {
-
     private int n = 0;
     int i = 0;
     float direction = -0.25f;
@@ -17,6 +16,18 @@ public class enemyMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (transform.position.x <= -3.5f)
+        {
+            direction = 0.25f;
+            transform.position = new Vector3(transform.position.x+.5f,transform.position.y-0.25f, 0);
+        }
+
+        if (transform.position.x >= 6.5f)
+        {
+            direction = -0.25f;
+            transform.position = new Vector3(transform.position.x-.5f,transform.position.y-0.25f, 0);
+        }
+        
         int k = 50 - n;
         if (k == i)
         {

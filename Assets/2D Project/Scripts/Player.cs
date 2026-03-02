@@ -16,7 +16,6 @@ public class Player : MonoBehaviour
         if (Keyboard.current != null && Keyboard.current.spaceKey.wasPressedThisFrame)
         {
             GameObject shot = Instantiate(bulletPrefab, shootOffsetTransform.position, Quaternion.identity);
-            Debug.Log("Bang!");
             GetComponent<Animator>().SetTrigger("hasShot");
             Destroy(shot, 3f);
             // todo - destroy the bullet after 3 seconds
