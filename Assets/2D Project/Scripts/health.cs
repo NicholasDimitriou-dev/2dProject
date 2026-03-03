@@ -13,7 +13,7 @@ public class health : MonoBehaviour
     // Update is called once per frame
     private void OnCollisionEnter2D(Collision2D other)
     {
-        if (other.gameObject.layer == LayerMask.NameToLayer("bullet"))
+        if (other.gameObject.layer == LayerMask.NameToLayer("bullet") || other.gameObject.layer == LayerMask.NameToLayer("enemyBullet"))
         {
             Destroy(other.gameObject);
             life--;
