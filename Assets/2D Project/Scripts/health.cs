@@ -11,26 +11,27 @@ public class health : MonoBehaviour
     }
 
     // Update is called once per frame
-    private void OnCollisionEnter(Collision other)
+    private void OnCollisionEnter2D(Collision2D other)
     {
-        Debug.Log("Enter");
-        if (other.gameObject.layer == LayerMask.NameToLayer("b"))
+        if (other.gameObject.layer == LayerMask.NameToLayer("bullet"))
         {
             Destroy(other.gameObject);
             life--;
-            Debug.Log("life");
-            if (life== 0)
+            if (life == 0)
             {
                 Destroy(gameObject);
             }
+
             if (life == 1)
             {
                 GetComponent<SpriteRenderer>().color = Color.red;
             }
+
             if (life == 2)
             {
                 GetComponent<SpriteRenderer>().color = Color.blue;
             }
+
             if (life == 3)
             {
                 GetComponent<SpriteRenderer>().color = Color.green;

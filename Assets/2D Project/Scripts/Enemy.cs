@@ -29,7 +29,7 @@ public class Enemy : MonoBehaviour
     {
         float roll = Random.Range(0f, 1f);
         //Debug.Log(roll);
-        if (roll > .995)
+        if (roll > .9995)
         {
             Fire();
         }

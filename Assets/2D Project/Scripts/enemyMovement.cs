@@ -10,23 +10,12 @@ public class enemyMovement : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        
+        wall.wallCollide += wallCollide;
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (transform.position.x <= -3.5f)
-        {
-            direction = 0.25f;
-            transform.position = new Vector3(transform.position.x+.5f,transform.position.y-0.25f, 0);
-        }
-        
-        if (transform.position.x >= 6.5f)
-        {
-            direction = -0.25f;
-            transform.position = new Vector3(transform.position.x-.5f,transform.position.y-0.25f, 0);
-        }
         
         int k = 50 - n;
         if (k == i)
@@ -50,20 +39,20 @@ public class enemyMovement : MonoBehaviour
         }
 
     }
-
-    private void OnTriggerEnter(Collider other)
-    {
-        if (other.gameObject.CompareTag("wall"))
-        {
-           
-            
-        }
-    }
+    
     void wallCollide()
     {
         Debug.Log("enter");
-        float newDirection = direction * -1;
-        direction = newDirection;
-        transform.position = new Vector3(0f, -1f, 0f);
+        // float newDirection = direction * -1;
+        // direction = newDirection;
+        if (transform.position.x < 0)
+        {
+            direction = 0.25f;
+            transform.position = new Vector3(transform.position.x+.25f,transform.position.y-0.1f, 0);
+        }else {
+            direction = -0.25f;
+            transform.position = new Vector3(transform.position.x-.25f,transform.position.y-0.1f, 0);    
+        }
+        
     }
 }
