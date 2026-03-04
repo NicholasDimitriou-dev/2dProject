@@ -34,7 +34,7 @@ public class enemyMovement : MonoBehaviour
             n = 20;
         }else if (transform.childCount > 1) {
             n = 30;
-        }else {
+        }else if (transform.childCount == 1){
             n = 40;
         }
 

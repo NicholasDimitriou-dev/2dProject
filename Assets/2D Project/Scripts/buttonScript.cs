@@ -1,23 +1,21 @@
-using System;
 using UnityEngine;
-using UnityEngine.UI;
-using TMPro;
-using Unity.VisualScripting;
 using UnityEngine.SceneManagement;
 
 public class buttonScript : MonoBehaviour
 {
    
     // Start is called once before the first execution of Update after the MonoBehaviour is created
-
-    private void Update()
+    private void Start()
     {
-        if (Time.deltaTime >= 3f)
-        {
-            loadGame();
-        }
+        DontDestroyOnLoad(this.gameObject);
     }
+
     
+
+    public void loadMenu()
+    {
+        SceneManager.LoadScene("2D Project/Scenes/mainMenu");
+    }
     public void loadGame()
     {
         SceneManager.LoadScene("2D Project/Scenes/Schmup");
