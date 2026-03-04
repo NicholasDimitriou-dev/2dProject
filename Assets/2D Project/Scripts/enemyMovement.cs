@@ -26,11 +26,11 @@ public class enemyMovement : MonoBehaviour
 
         i++;
         // Debug.Log(transform.childCount);
-        if (transform.childCount > 16) {
+        if (transform.childCount >= 16) {
             n = 0;
-        }else if(transform.childCount > 11) {
+        }else if(transform.childCount >= 11) {
             n = 10;
-        }else if (transform.childCount > 6) {
+        }else if (transform.childCount >= 6) {
             n = 20;
         }else if (transform.childCount > 1) {
             n = 30;
