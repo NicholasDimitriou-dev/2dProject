@@ -152,6 +152,7 @@ public class GameManager : MonoBehaviour
         score = 0;
     }
     public void credits() {
+        Debug.Log("credit");
         SceneManager.LoadScene("2D Project/Scenes/credits");
     }
     

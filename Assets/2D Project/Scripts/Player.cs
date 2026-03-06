@@ -2,12 +2,12 @@
 using System.Collections;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.SceneManagement;
 
 public class Player : MonoBehaviour
 {
     public GameObject bulletPrefab;
     public Transform shootOffsetTransform;
-    public GameManager scipt;
     public delegate void PlayerDiedFunc(AudioClip death);
 
     public AudioClip death;
@@ -61,7 +61,7 @@ public class Player : MonoBehaviour
         GetComponent<Animator>().SetTrigger("hasDied");
         yield return new WaitForSeconds(seconds);
         OnPlayerDied?.Invoke(death);
-        Destroy(this.gameObject); 
-        scipt.credits();
+        SceneManager.LoadScene("2D Project/Scenes/credits");
+        Destroy(this.gameObject);
     }
 }

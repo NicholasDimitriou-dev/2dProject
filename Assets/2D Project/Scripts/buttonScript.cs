@@ -3,12 +3,10 @@ using UnityEngine.SceneManagement;
 
 public class buttonScript : MonoBehaviour
 {
-    public AudioSource audio;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     private void Start()
     {
         DontDestroyOnLoad(this.gameObject);
-        DontDestroyOnLoad(audio);
     }
 
     
