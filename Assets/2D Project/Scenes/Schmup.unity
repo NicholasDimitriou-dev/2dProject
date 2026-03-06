@@ -251,6 +251,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::GameManager
   scores: {fileID: 474693687}
+  enemies: {fileID: 1624292880}
 --- !u!4 &106117283
 Transform:
   m_ObjectHideFlags: 0
@@ -1294,6 +1295,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bulletPrefab: {fileID: 2457785739244962049, guid: d4511b14daaa37c468a74ed386b2583f, type: 3}
   shootOffsetTransform: {fileID: 3921969463098233975}
+  scipt: {fileID: 0}
 --- !u!4 &3921969463098233975
 Transform:
   m_ObjectHideFlags: 0

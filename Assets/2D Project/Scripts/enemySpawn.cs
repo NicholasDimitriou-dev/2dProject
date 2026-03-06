@@ -22,10 +22,7 @@ public class enemySpawn : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (transform.childCount == 0)
-        {
-            LoadEnemy();
-        }
+        
 
         if (Keyboard.current != null && Keyboard.current.lKey.isPressed)
         {
